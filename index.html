@@ -1,0 +1,45 @@
+<html>
+  <body>
+    <div id="line-chart" style="width: 600px; height: 400px; box-shadow: 0px 0px 5px #dadada; padding: 5px; border-radius: 5px;"></div>
+  </body>
+
+  <script src= './dist/bundle.js'> </script>
+  <script>
+    var yAxises = [
+      {
+        type: 'linear',
+        orientation: 'left',
+        dataSet: [
+          {
+            name: "Mars",
+            color: "#808080",
+            data: [45, 35, 100, 90, 85.5, -20, -10]
+          },
+          {
+            name: "Earth",
+            color: "#ff4040",
+            data: [24, 25.6, 30, 50, 10, 6, -1]
+          },
+          {
+            name: "Pluto",
+            color: "#000000",
+            data: [-24, -25.6, -30, -50, -10, -6, -1]
+          }
+        ]
+      }
+    ]
+
+    var xAxis = {
+      type: 'string',
+      data: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+    }
+
+    let easyChart = new EasyChart('#line-chart', {
+      type: "lineChart",
+      xAxis: xAxis,
+      yAxises: yAxises
+    });
+
+    easyChart.draw();
+  </script>
+</html> 
