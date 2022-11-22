@@ -15,6 +15,6 @@
     "d3": "^5.16.0",
     "d3-transform": "^1.0.5",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   }
 }
